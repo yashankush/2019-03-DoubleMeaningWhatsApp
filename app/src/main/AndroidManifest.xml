@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.valentine.stickers">
+    package="com.wastickerapps.dublemeaningstickers">
 
     <application
-        android:name="com.valentine.stickers.StickerApplication"
+        android:name="com.wastickerapps.dublemeaningstickers.StickerApplication"
         android:allowBackup="false"
         android:fullBackupContent="false"
         android:hardwareAccelerated="true"
@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.valentine.stickers.EntryActivity">
+        <activity android:name="com.wastickerapps.dublemeaningstickers.EntryActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,28 +23,28 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.valentine.stickers.StickerPackListActivity"
+            android:name="com.wastickerapps.dublemeaningstickers.StickerPackListActivity"
             android:label="@string/title_activity_sticker_packs_list" />
         <activity
-            android:name="com.valentine.stickers.StickerPackDetailsActivity"
-            android:parentActivityName="com.valentine.stickers.StickerPackListActivity"
+            android:name="com.wastickerapps.dublemeaningstickers.StickerPackDetailsActivity"
+            android:parentActivityName="com.wastickerapps.dublemeaningstickers.StickerPackListActivity"
             tools:ignore="UnusedAttribute">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.valentine.stickers.StickerPackListActivity" />
+                android:value="com.wastickerapps.dublemeaningstickers.StickerPackListActivity" />
         </activity>
         <activity
-            android:name="com.valentine.stickers.StickerPackInfoActivity"
+            android:name="com.wastickerapps.dublemeaningstickers.StickerPackInfoActivity"
             android:label="@string/title_activity_sticker_pack_info"
-            android:parentActivityName="com.valentine.stickers.StickerPackDetailsActivity"
+            android:parentActivityName="com.wastickerapps.dublemeaningstickers.StickerPackDetailsActivity"
             tools:ignore="UnusedAttribute">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.valentine.stickers.StickerPackDetailsActivity" />
+                android:value="com.wastickerapps.dublemeaningstickers.StickerPackDetailsActivity" />
         </activity>
 
         <provider
-            android:name="com.valentine.stickers.StickerContentProvider"
+            android:name="com.wastickerapps.dublemeaningstickers.StickerContentProvider"
             android:authorities="${contentProviderAuthority}"
             android:enabled="true"
             android:exported="true"
